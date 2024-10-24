@@ -1,3 +1,4 @@
+import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
@@ -5,9 +6,19 @@ function Navbar() {
       <div className="flex-initial w-32  text-3xl font-bold">
         <Link to="/">Snap</Link>
       </div>
-      <div className="flex-1 space-x-8 font-semibold text-zinc-500">
-        <Link to="/Features">Features</Link>
-        <Link to="/">Company</Link>
+      <div className="flex flex-1 space-x-8 font-semibold text-zinc-500 ">
+        <Link to="/Features" className="flex  items-center gap-1">
+          Features
+          <div>
+            <ChevronDown size={16} />
+          </div>
+        </Link>
+        <Link to="/" className="flex  items-center gap-1">
+          Company
+          <div>
+            <ChevronDown size={16} />
+          </div>
+        </Link>
         <Link to="/">Careers</Link>
         <Link to="/">About</Link>
       </div>
