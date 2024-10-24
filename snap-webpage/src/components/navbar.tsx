@@ -2,7 +2,7 @@ import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="flex px-16 border-2 items-center py-4  bg-zinc-50 ">
+    <div className="flex px-16  items-center py-4  bg-zinc-50 ">
       <div className="flex-initial w-32  text-3xl font-bold">
         <Link to="/">Snap</Link>
       </div>
