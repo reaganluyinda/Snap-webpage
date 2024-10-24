@@ -1,7 +1,17 @@
+import Navbar from "./components/navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+
 function App() {
   return (
     <>
-      <h1 className="text-green-600">reagavcbbn </h1>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/" />
+        </Routes>
+      </Router>
     </>
   );
 }
